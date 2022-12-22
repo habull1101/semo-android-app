@@ -1,0 +1,2 @@
+rootProject.name = "Semo"
+include ':app'

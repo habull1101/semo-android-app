@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Semo</string>
+    <string name="introOwnerInfo">Thông tin này sẽ được hiển thị trên màn hình khi thiết bị bị thông báo mất trộm</string>
+    <string name="introEmail">Địa chỉ email sẽ nhận thông tin vị trí, ảnh chụp của thiết bị.</string>
+</resources>

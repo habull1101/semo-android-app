@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/bottomNavi" />
+
+    <nl.joery.animatedbottombar.AnimatedBottomBar
+        android:id="@+id/bottomNavi"
+        android:background="#E8E6E6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:abb_selectedTabType="text"
+        app:abb_indicatorAppearance="round"
+        app:abb_indicatorMargin="16dp"
+        app:abb_indicatorHeight="4dp"
+        app:abb_tabs="@menu/main_bottom_navigation"
+        app:abb_selectedIndex="0"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

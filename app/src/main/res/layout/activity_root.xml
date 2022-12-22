@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RootActivity"
+    android:background="#F8F7F7">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="20dp"
+        android:paddingBottom="25dp">
+
+        <ImageView
+            android:id="@+id/backIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/nameAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/backIcon"
+            android:text="Kiểm tra quyền root"
+            android:textSize="21dp"
+            android:textColor="#353434"
+            android:layout_marginLeft="15dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/root"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:background="@drawable/rounded_30dp"
+        app:layout_constraintTop_toBottomOf="@id/appBar"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/introRootTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Root là việc chiếm quyền sử dụng cao nhất trên thiết bị Android. Khi một thiết bị có quyền root, nó sẽ không còn bị hạn chế về nhiều mặt (tùy ý chỉnh sửa tập tin hệ thống, xóa bỏ ứng dụng hệ thống, truy cập phần cứng cấp độ thấp, ...). Tuy nhiên nó cũng tồn tại nhiều rủi ro."
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/img"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_marginTop="30dp"
+        android:justificationMode="inter_word" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRoot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/introRootTv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Kiểm tra"
+        android:textAllCaps="false"
+        android:textSize="19sp"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_30dp"
+        android:backgroundTint="#1576C1"
+        android:paddingLeft="90dp"
+        android:paddingRight="90dp"
+        android:layout_marginTop="50dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

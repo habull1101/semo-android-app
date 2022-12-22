@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/trusted"
+        android:title="Chứng chỉ tin cậy"
+        android:icon="@drawable/trusted" />
+
+    <item
+        android:id="@+id/user"
+        android:title="Chứng chỉ người dùng"
+        android:icon="@drawable/user" />
+</menu>

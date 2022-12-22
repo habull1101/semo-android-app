@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="25dp"
+    android:paddingBottom="30dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="20dp"
+    app:layout_constraintTop_toTopOf="parent" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email nhận thông tin"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="#353434"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/ownerEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#0562C5"
+        android:hint="Nhập vào nội dung" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ownerEt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/view"
+        android:text="Hủy"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#0562C5"
+        android:layout_marginTop="30dp"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="25dp"
+        android:background="#DDDADC"
+        app:layout_constraintTop_toBottomOf="@id/ownerEt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/doneBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ownerEt"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/view"
+        android:text="Đồng ý"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#0562C5"
+        android:layout_marginTop="30dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

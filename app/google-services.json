@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "191892966382",
+    "project_id": "project-ptit",
+    "storage_bucket": "project-ptit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191892966382:android:dacbc0947558f13a6d9cff",
+        "android_client_info": {
+          "package_name": "com.habull.semo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191892966382-c5qmmfnnp792mafm3vanq4fbekjo9nl5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGnObgvd943yWRKI7gecdSJCD0OTfTGo0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191892966382-c5qmmfnnp792mafm3vanq4fbekjo9nl5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
